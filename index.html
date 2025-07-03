@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Solar System Simulation ☀️</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+      }
+    }
+    </script>
+</head>
+<body class="dark">
+  <div id="solar-bg"></div>
+  <div class="control-panel collapsed" id="controlPanel">
+    <div class="panel-header">
+      <h2>Solar System Controls</h2>
+      <button id="themeToggle" title="Toggle dark/light mode">🌙</button>
+    </div>
+    <div id="sliders"></div>
+    <div class="panel-actions">
+      <button id="pauseResume">Pause</button>
+    </div>
+  </div>
+  <div id="tooltip" class="tooltip"></div>
+  <div id="planetInfoCard" class="info-card" style="display:none;">
+    <div class="info-header">
+      <span id="infoName"></span>
+      <button id="closeInfoCard" title="Close">&times;</button>
+    </div>
+    <div id="infoDetails"></div>
+  </div>
+  <script src="https://unpkg.com/three@0.155.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
