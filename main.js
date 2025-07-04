@@ -10,7 +10,7 @@ let panelCollapsed = false;
 let SCALE = 1.0; // Default scale
 let PLANETS = [];
 
-// Texture URLs for planets (CORS-friendly from Wikimedia Commons)
+// Texture URLs for planets 
 const PLANET_TEXTURES = {
   Sun: 'textures/2k_sun.jpg',
   Mercury: 'textures/2k_mercury.jpg',
@@ -25,7 +25,7 @@ const PLANET_TEXTURES = {
   Neptune: 'textures/2k_neptune.jpg',
 };
 
-// Add this near the top
+
 const PLANET_INFO = {
   Sun: {
     description: 'The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma.',
@@ -132,7 +132,7 @@ function init() {
   let aspect = window.innerWidth / window.innerHeight;
   let fov = 45;
   let camZ = 60;
-  let camY = 45; // Always raise camera for all devices
+  let camY = 45; 
   if (window.innerWidth < 600) {
     fov = 60;
     camZ = 90;
